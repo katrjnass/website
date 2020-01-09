@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        title WEB-Lab6
+        link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.css')
+    body
+        nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+            a.navbar-brand(href='#') Меню
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarsExampleDefault.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto
+                    li.nav-item
+                        a.nav-link(href='/') Cписок студентов
+                    li.nav-item
+                        a.nav-link(href='/articles/add/') Добавить информацию о студенте
+
+        .container
+            block content
+
+            script(src='/jquery/dist/jquery.js')
+            script(src='/js/main.js')

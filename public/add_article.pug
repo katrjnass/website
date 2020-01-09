@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    hr
+    h1 Добавить студента
+    hr
+    form(method="POST", action="/articles/add")
+        .form-group
+            label Имя студента:
+            input.form-control(type="text", name="title")
+        .form-group
+            label Группа студента:
+            input.form-control(type="text", name="author")
+        .form-group
+            label Средний бал студента:
+            input.form-control(type="text", name="body")
+        input.btn-primary(type="submit", value="Подтвердить")
+

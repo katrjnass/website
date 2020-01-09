@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - node
+script:
+  - npm run test
+notifications:
+  email: false
+deploy:
+  provider: heroku
+  api_key: $api_key
+  app: fast-plateau-81895
+
