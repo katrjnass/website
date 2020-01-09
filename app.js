@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 const PORT = process.env.PORT || 80;
 
-mongoose.connect('mongodb+srv://vova:1q2w3e@cluster0-pkydx.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://katrjnass:vovamaksymchuk@cluster0-6tmno.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 const db = mongoose.connection;
